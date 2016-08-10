@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>cod</title>
+    <link href="errorreport_style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="center-form" align="center">
+    <h1>ERROR</h1>
+    <p th:text="${charge_message}"></p>
+    <form>
+        <div class="form-row">
+            <input type="button" onclick="history.back(-2); return true" value="Return"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

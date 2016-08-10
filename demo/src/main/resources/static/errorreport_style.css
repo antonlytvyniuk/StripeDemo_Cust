@@ -1,0 +1,32 @@
+.form-row {
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.center-form {
+    position: absolute; /* Абсолютное позиционирование */
+    width: 400px; /* Ширина слоя в пикселах */
+    height: 100px; /* Высота слоя в пикселах */
+    left: 50%; /* Положение слоя от левого края */
+    top: 50%; /* Положение слоя от верхнего края */
+    margin-left: -200px; /* Отступ слева */
+    margin-top: -50px;	/* Отступ сверху */
+    background: white; /* Цвет фона */
+    /*border: solid 1px #337AB7; /* Параметры рамки вокруг */
+    /*padding: 10px; /* Поля вокруг текста */
+    /*overflow: auto; /* Добавление полосы прокрутки */
+}
+
+.form-row input[type=button]{
+    padding:5px;
+    height:25px;
+    width:100%;
+    line-height: 10px;
+    background: #337AB7;
+    color:white;
+}
+
+* {
+    font-family:arial;
+    font-size:10pt;
+}

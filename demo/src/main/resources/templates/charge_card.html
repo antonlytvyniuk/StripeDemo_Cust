@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>cod</title>
+    <link href="add_card_account_style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<script type="text/javascript">
+    <!--
+    function checknum(input) {
+        if (16 != input.value.length) {
+            input.setCustomValidity('Enter your myCard number');
+        } else {// && input.value > 0){
+            input.setCustomValidity('')
+        }
+    }
+
+    function checknum_2(input) {
+        if (16 != input.value.length || document.getElementById("form_card").value == input.value) {
+            input.setCustomValidity('Enter your myCard number');
+        } else {// && input.value > 0){
+            input.setCustomValidity('')
+        }
+    }
+
+    function checkcvc(input) {
+        if (input.value.length != 3) {
+            input.setCustomValidity('Enter your myCard cvc');
+        } else {// && input.value > 0){
+            input.setCustomValidity('')
+        }
+    }
+
+    function checkm(input) {
+        if (input.value.length != 2) {
+            input.setCustomValidity('Enter your myCard exp_month');
+        } else {// && input.value > 0 && input.value < 13){
+            input.setCustomValidity('')
+        }
+    }
+
+    function checky(input) {
+        if (input.value.length != 2) {
+            input.setCustomValidity('Enter your myCard exp_year');
+        } else {// && input.value > 0){
+            input.setCustomValidity('')
+        }
+    }
+    //-->
+</script>
+<div class="mineform">
+    <form action="/charge_card">
+
+        <div class="form-row" align="center">
+            <p>Charge Source</p>
+        </div>
+
+        <div class="form-row">
+            <label for="form_card">Charge card number:</label>
+            <input type="text" id="form_card" name="card" value="4000056655665556" required="" oninput="checknum(this)"/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_amount">Charge amount:</label>
+            <input type="text" id="form_amount" name="amount" value="100" required=""/>
+        </div>
+
+        <div class="form-row" align="center">
+            <p>Charge Destination</p>
+        </div>
+
+        <div class="form-row">
+            <label for="form_num">Number: </label>
+            <input type="text" id="form_num" name="number" value="4012888888881881" required="" oninput="checknum_2(this)"/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_cvc">CVC: </label>
+            <input type="text" id="form_cvc" name="cvc" value="123" required="" oninput="checkcvc(this)"/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_month">Exp Month: </label>
+            <input type="text" id="form_month" name="exp_month" value="11" required="" oninput="checkm(this)"/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_year">Exp Year: </label>
+            <input type="text" id="form_year" name="exp_year" value="18" required="" oninput="checky(this)"/>
+        </div>
+
+        <input type="submit" value="Do Charge"/>
+    </form>
+
+    <form action="/">
+        <div class="form-row">
+            <input type="button" onclick="history.back(); return true" value="Return"/>
+            <input type="submit" value="Home Page"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

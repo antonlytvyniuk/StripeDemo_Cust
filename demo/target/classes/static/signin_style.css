@@ -1,0 +1,50 @@
+.form-row {
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.form-row input {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 0px 5px;
+    width: 287px;
+    border: 1px solid #ABADB3;
+}
+
+.center-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    /*position: absolute; *//* Абсолютное позиционирование */
+    /*width: 500px; *//* Ширина слоя в пикселах */
+    /*height: 160px; *//* Высота слоя в пикселах */
+    /*left: 50%; *//* Положение слоя от левого края */
+    /*top: 50%; *//* Положение слоя от верхнего края */
+    /*margin-left: -250px; *//* Отступ слева */
+    /*margin-top: -80px;	*//* Отступ сверху */
+    /*background: white; *//* Цвет фона */
+    /* border: solid 1px black; /* Параметры рамки вокруг */
+    /*padding: 10px; /* Поля вокруг текста */
+    /*overflow: auto; /* Добавление полосы прокрутки */
+}
+
+.form-row input[type=submit] {
+    padding:5px;
+    height:25px;
+    width:100%;
+    line-height: 10px;
+    background: #337AB7;
+    color:white;
+}
+
+.form-row input[type=submit]:hover {
+    background:#286090;
+}
+
+* {
+    font-family:arial;
+    font-size:10pt;
+}

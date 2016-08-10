@@ -1,0 +1,6 @@
+com\codzaza\controller\MainController.class
+com\codzaza\model\MyCard.class
+com\codzaza\model\User.class
+com\codzaza\API\Management.class
+com\codzaza\UserControl.class
+com\codzaza\DemoApplication.class

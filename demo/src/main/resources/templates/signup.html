@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <title>cod</title>
+    <link href="signin_style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<br/>
+<div class="center-form">
+    <form action="/registr">
+        <div class="form-row">
+            <label for="form_fname">First Name: </label>
+            <input type="text" id="form_fname" name="first_name" value="Lytvyniuk" required=""/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_sname">Second Name: </label>
+            <input type="text" id="form_sname" name="second_name" value="Anton" required=""/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_contry">Country: </label>
+            <input type="text" id="form_contry" name="country" value="US" required=""/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_city">City:</label>
+            <input type="text" id="form_city" name="city" value="New-York" required=""/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_line1">Street address: </label>
+            <input type="text" id="form_line1" name="line1" value="Lysjyvska st" required=""/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_email">Email: </label>
+            <input type="email" id="form_email" name="email" value="lool@gmail.com" required=""/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_password">Password: </label>
+            <input type="password" id="form_password" name="password" value="101008" required=""/>
+        </div>
+
+        <div class="form-row">
+            <label for="form_password_repeat">Repeat password: </label>
+            <input type="password" id="form_password_repeat" name="repeat" value="101008" required="" oninput="check(this)"/>
+            <script>
+                function check(input) {
+                    if (input.value != document.getElementById('form_password').value) {
+                        input.setCustomValidity('The two password must match.');
+                    } else {
+                        // input is valid -- reset the error message
+                        input.setCustomValidity('');
+                    }
+                }
+            </script>
+        </div>
+
+        <div class="form-row">
+            <input type="submit" value="Sign Up"/>
+        </div>
+    </form>
+    <form action="/">
+        <div class="form-row">
+            <input type="submit" value="Home Page"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

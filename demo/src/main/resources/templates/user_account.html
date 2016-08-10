@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns = "http://www.w3.org/1999/html"
+      xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title th:inline="text">cod - [[${user_name}]]</title>
+    <link href="user_account_style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="mineform">
+    <form action="/add_card">
+
+        <div class="form-row">
+            <label for="form_sk">User ID: </label>
+            <output id="form_sk" th:text="${user_id}">1</output>
+        </div>
+
+        <div class="form-row">
+            <label for="form_fname">First Name: </label>
+            <output id="form_fname" th:text="${user_firstname}">1</output>
+        </div>
+
+        <div class="form-row">
+            <label for="form_sname">Second Name: </label>
+            <output id="form_sname" th:text="${user_secondname}">1</output>
+        </div>
+
+        <div class="form-row">
+            <label for="form_email">Email: </label>
+            <output id="form_email" th:text="${user_email}">1</output>
+        </div>
+
+        <div class="form-row">
+            <label for="form_amount">Amount: </label>
+            <output id="form_amount" th:text="${user_amount}"></output>
+        </div>
+
+        <div class="form-text">
+            <label for="form_card">Cards: </label>
+            <output id="form_card" th:text="${user_card}">1</output>
+        </div>
+
+        <input type="submit" value="Add Card"/>
+    </form>
+
+    <form action="/charge_info">
+            <input type="submit" value="Do Charge"/>
+    </form>
+
+    <form action="/">
+        <div class="form-row">
+            <input type="button" onclick="history.back(); return true" value="Return"/>
+            <input type="submit" value="Home Page"/>
+        </div>
+    </form>
+
+    <form action="/delete">
+        <div class="form-row">
+            <input type="submit" value="Delete Customer"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

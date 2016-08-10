@@ -1,0 +1,79 @@
+.form-row {
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.form-row output {
+    float: right;
+    height: 20px;
+    margin: 0px;
+    padding: 0px 5px;
+    width: 287px;
+    /*border: 1px solid #ABADB3;*/
+}
+
+.form-text output {
+    float: right;
+    margin: 0px;
+    padding: 0px 5px;
+    width: 287px;
+    overflow-wrap: normal;
+    word-wrap: break-word;
+    word-break: normal;
+    line-break: auto;
+    hyphens: manual;
+    /*border: 1px solid #ABADB3;*/
+}
+
+.mineform {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.mineform input[type=submit] {
+    padding:5px;
+    height:25px;
+    width:100%;
+    line-height: 10px;
+    background: firebrick;
+    color:white;
+    margin-bottom: 8px;
+}
+
+.mineform input[type=submit]:hover {
+    background: darkred;
+}
+
+
+.form-row input[type=submit] {
+    padding:5px;
+    height:25px;
+    width:100%;
+    line-height: 10px;
+    background: #337AB7;
+    color:white;
+}
+
+.form-row input[type=submit]:hover {
+    background:#286090;
+}
+
+.form-row input[type=button] {
+    padding:5px;
+    height:25px;
+    width:100%;
+    line-height: 10px;
+    background: #337AB7;
+    color:white;
+}
+
+.form-row input[type=button]:hover {
+    background:#286090;
+}
+
+* {
+    font-family:arial;
+    font-size:10pt;
+}
